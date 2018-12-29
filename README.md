@@ -29,13 +29,13 @@ The following Python libraries were utilized:
 2) The next step is to summarize all the reviews to meaningful phrases, determine the polarity of filtered phrases and give a score to each of the words in the phrases. We feed the file Phoenix_restaurant_reviews.json to review_summarization.ipynb for this purpose and output file Phoenix_restaurant_review_Results.csv is generated. The output file contains extracted phrases and their respective polarities.
 
 3) We now have the phrases extracted and the polarity calculated from the reviews, hence using Phoenix_restaurant_review_Results.csv from step2, we can now execute the jupyter notebook 'yelp_project_classify.ipynb' step by step to verify the following:
-- correlation
-- classification
-- phrase categorization
-- visualization
-- restaurant evaluation. 
+  - correlation
+  - classification
+  - phrase categorization
+  - visualization
+  - restaurant evaluation. 
 
 4) For restaurant evaluation, we changed the categories to 'Pizza' in filter_data.ipynb and reran the same code to generate restaurant_reviews_Pizza.json. This json file was used by review_summarization.py to generate the phrases only for Pizza restaurants.The following lines of code were modified in filter_data.py to extract Pizza only restaurants:
 
-* 'Pizza' in each_business['categories']
-* fileName=city + '_restaurant_reviews_Pizza.json'
+  * 'Pizza' in each_business['categories']
+  * fileName=city + '_restaurant_reviews_Pizza.json'
